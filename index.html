@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Berat Arif | Web Developer</title>
+  <title>Berat Arif Gönül | Frontend Web Geliştirici</title>
 
-  <meta name="description" content="Web Developer portfolio. Frontend ağırlıklı, modern ve performans odaklı projeler." />
+  <meta name="description" content="Frontend ağırlıklı, modern, responsive ve performans odaklı web projeleri geliştiren web geliştirici portfolyosu." />
   <meta name="author" content="Berat Arif Gönül" />
+  <meta name="keywords" content="Web Geliştirici, Frontend Developer, JavaScript, React, Portfolyo" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,75 +21,111 @@
 
 <body>
 
-  <!-- ================= NAVBAR ================= -->
+  <!-- ================= HEADER ================= -->
   <header class="header">
-    <nav class="nav container">
+    <nav class="nav container" aria-label="Ana Menü">
       <div class="logo">Berat<span>.</span></div>
 
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Anasayfa</a></li>
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#contact">İletişim</a></li>
       </ul>
+
+      <!-- Dil seçici (ileride aktif olacak) -->
+      <!-- <button class="lang-btn">EN</button> -->
     </nav>
   </header>
 
   <!-- ================= HERO ================= -->
-  <section id="home" class="hero">
-    <div class="hero-content container">
-      <h1>
-        Hi, I’m <span>Berat</span><br />
-        Web Developer
-      </h1>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content container">
+        <h1>
+          Merhaba, ben <span>Berat</span><br />
+          Frontend Web Geliştiricisiyim
+        </h1>
 
+        <p>
+          Modern, responsive ve performans odaklı web deneyimleri geliştiriyorum.
+          Temiz kod ve akıcı animasyonlara önem veriyorum.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">Projelerim</a>
+          <a href="#contact" class="btn secondary">İletişime Geç</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about container">
+      <h2>Hakkımda</h2>
       <p>
-        I build modern, responsive and performance-focused web experiences.
+        Frontend teknolojilerine odaklanan bir web geliştiriciyim.
+        Kullanıcı deneyimi, animasyonlar ve performans optimizasyonu benim için önemli.
+        Gerçek projeler geliştirerek kendimi sürekli ileri taşımayı hedefliyorum.
+      </p>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects container">
+      <h2>Projeler</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Codeproo</h3>
+          <p>Yazılım öğrenmek isteyenler için çoklu programlama dillerini içeren bir web platformu.</p>
+          <a href="https://codeproo.netlify.app/" target="_blank" rel="noopener">Siteye Git →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>React Portföy Sitesi</h3>
+          <p>React kullanarak frontend becerilerimi geliştirmek için oluşturduğum portföy sitesi.</p>
+          <a href="https://reactfirtweb.netlify.app/" target="_blank" rel="noopener">Siteye Git →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Hava Durumu Uygulaması</h3>
+          <p>Harici API kullanılarak geliştirilmiş bir hava durumu uygulaması.</p>
+          <a href="https://havadurumujson.netlify.app/" target="_blank" rel="noopener">Siteye Git →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Not Defteri</h3>
+          <p>JSON yapısı kullanılarak kayıt alan bir not defteri uygulaması.</p>
+          <a href="https://notdefterijson.netlify.app/" target="_blank" rel="noopener">Siteye Git →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Tailwind CSS Portföy</h3>
+          <p>Tailwind CSS ile geliştirilmiş modern ve sade bir portföy sitesi.</p>
+          <a href="http://beratgnl.online/" target="_blank" rel="noopener">Siteye Git →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>JSON Login Sistemi</h3>
+          <p>Kullanıcı verilerinin JSON formatında tutulduğu bir giriş sistemi.</p>
+          <a href="https://jsonlogin.netlify.app/" target="_blank" rel="noopener">Siteye Git →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact container">
+      <h2>İletişim</h2>
+      <p>
+        Bir proje, iş birliği ya da sadece sohbet etmek için benimle iletişime geçebilirsin.
       </p>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ABOUT ================= -->
-  <section id="about" class="about container">
-    <h2>About Me</h2>
-    <p>
-      I’m a web developer focused on frontend technologies, animations and clean code.
-      I enjoy building real-world projects and continuously improving my skills.
-    </p>
-  </section>
-
-  <!-- ================= PROJECTS ================= -->
-  <section id="projects" class="projects container">
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-      <!-- Project Card -->
-      <div class="project-card">
-        <h3>Project Title</h3>
-        <p>Short project description goes here.</p>
-        <a href="#" target="_blank">View Project →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="contact container">
-    <h2>Contact</h2>
-    <p>
-      Feel free to reach out for collaboration or just a friendly chat.
-    </p>
-
-    <a href="mailto:example@mail.com" class="btn primary">Send Email</a>
-  </section>
+      <a href="mailto:gonulberat1@gmail.com" class="btn primary">Mail Gönder</a>
+    </section>
+  </main>
 
   <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <p>© 2025 Berat Arif. All rights reserved.</p>
+    <p>© 2025 Berat Arif Gönül. Tüm hakları saklıdır.</p>
   </footer>
 
   <!-- JS -->
