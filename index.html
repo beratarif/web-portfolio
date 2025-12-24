@@ -18,6 +18,18 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- İCONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,6 +55,32 @@
 
         <!-- Dil seçici (ileride aktif olacak) -->
         <!-- <button class="lang-btn">EN</button> -->
+      </nav>
+
+      <nav class="mobile-menu">
+        <div class="logo"><span>Berat </span>Arif <span>Gönül</span></div>
+        <div class="navbar-toggle">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <ul class="mobile-menu-links">
+          <li><a href="#home">Anasayfa</a></li>
+          <li><a href="#about">Hakkımda</a></li>
+          <li><a href="#projects">Projeler</a></li>
+          <li><a href="#contact">İletişim</a></li>
+
+          <!-- Dil seçici (ileride aktif) -->
+          <!-- button class="lang-btn">EN</button> -->
+        </ul>
       </nav>
     </header>
 
@@ -177,10 +215,22 @@
           Bir proje, iş birliği ya da sadece sohbet etmek için benimle iletişime
           geçebilirsin.
         </p>
-
-        <a href="mailto:gonulberat1@gmail.com" class="btn primary"
-          >Mail Gönder</a
-        >
+        <div class="contact-icons">
+          <a href="mailto:gonulberat1@gmail.com" class="btn primary"
+            ><i class="fa fa-envelope" style="font-size: 24px"></i
+          ></a>
+          <a href="https://instagram.com/berat.a.g" class="btn primary"
+            ><i class="fa fa-instagram" style="font-size: 24px"></i
+          ></a>
+          <a href="https://github.com/beratarif" class="btn primary"
+            ><i class="fa fa-github" style="font-size: 24px"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/berat-g%C3%B6n%C3%BCl-17ab96358"
+            class="btn primary"
+            ><i class="fa fa-linkedin" style="font-size: 24px"></i
+          ></a>
+        </div>
       </section>
     </main>
 
@@ -191,5 +241,10 @@
 
     <!-- JS -->
     <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

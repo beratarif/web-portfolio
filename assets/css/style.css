@@ -115,6 +115,14 @@ ul {
 }
 
 /* =====================
+   MOBİLE MENU
+===================== */
+
+.mobile-menu{
+  display: none;
+}
+
+/* =====================
    HERO
 ===================== */
 .hero {
@@ -291,10 +299,16 @@ section p {
   box-shadow: 20px red;
 }
 
-.about-img img{
+.about-img img {
   border-radius: 120px;
   align-items: center;
-  box-shadow: 0px 0px 10px 1px rgba(222,16,16,0.55);
+  box-shadow: 0px 0px 10px 1px rgba(222, 16, 16, 0.55);
+}
+
+.contact-icons {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 /* =====================
@@ -313,8 +327,31 @@ section p {
   .nav-links {
     display: none;
   }
-  
-  .about{
+
+  .about {
     display: grid;
+  }
+
+  .contact-icons {
+    display: grid; /* 👈 EN ÖNEMLİ SATIR */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    justify-items: center;
+  }
+
+  .mobile-menu{
+    display: flex;
+    width: 100%;
+    
+  }
+
+  .nav {display: none;}
+}
+@media (max-width: 320px){
+  .contact-icons {
+    display: grid; /* 👈 EN ÖNEMLİ SATIR */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    justify-items: center;
   }
 }
