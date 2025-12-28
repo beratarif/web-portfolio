@@ -118,7 +118,7 @@ ul {
    MOBİLE MENU
 ===================== */
 
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
 
@@ -339,19 +339,58 @@ section p {
     justify-items: center;
   }
 
-  .mobile-menu{
+  .mobile-menu {
     display: flex;
     width: 100%;
-    
   }
 
-  .nav {display: none;}
+  .nav {
+    display: none;
+  }
 }
-@media (max-width: 320px){
+@media (max-width: 320px) {
   .contact-icons {
     display: grid; /* 👈 EN ÖNEMLİ SATIR */
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
     justify-items: center;
   }
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu-links {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-menu-links.open {
+  display: flex;
+}
+
+/* ===== HEADER EFFECT ===== */
+.header.scrolled {
+  backdrop-filter: blur(10px);
+  background: rgba(15, 15, 15, 0.85);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== ACTIVE LINK ===== */
+.nav-links a.active {
+  color: #6df0ff;
+}
+
+/* ===== FADE ANIMATION ===== */
+section,
+.project-card,
+.about-img,
+.about-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
